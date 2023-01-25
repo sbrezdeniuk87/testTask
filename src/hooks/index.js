@@ -1,0 +1,1 @@
+export { useGetCollections } from './useGetCollectios';

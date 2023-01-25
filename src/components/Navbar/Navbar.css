@@ -1,0 +1,152 @@
+.bloobloom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10010;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.bloobloom-header .bloobloom-header-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bloobloom-header-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    border-right: 1px solid #000;
+    width: 160px;
+    color: #000 !important;
+    font-family: "Acumin Pro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bloobloom-header-button:hover {
+    text-decoration: underline;
+}
+
+.bloobloom-header .bloobloom-side-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    min-width: 481px;
+    background: #fff;
+    height: calc(100vh - 50px);
+    top: 50px;
+    left: -491px;
+    z-index: 10;
+    transition: all 400ms ease;
+}
+
+.bloobloom-side-menu-open {
+    left: 0 !important;
+}
+
+.bloobloom-header .bloobloom-side-menu .sidemenu-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.bloobloom-side-sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 240px;
+    background: #fff;
+    height: calc(100vh - 50px);
+    top: 50px;
+    left: 481px;
+    border-left: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all 400ms ease;
+}
+
+.bloobloom-side-sub-menu-open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bloobloom-side-sub-menu .side-sub-menu-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+
+.bloobloom-side-sub-menu .side-sub-menu-main .sidemenu-main-tab,
+.bloobloom-header .bloobloom-side-menu .sidemenu-main .sidemenu-main-tab {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bloobloom-side-sub-menu .side-sub-menu-main .sidemenu-main-tab:hover,
+.sidemenu-main .sidemenu-main-tab:hover {
+    background-color: #000;
+}
+
+.bloobloom-side-sub-menu .side-sub-menu-main .sidemenu-main-tab .side-sub-menu-tab-title,
+.sidemenu-main-tab .sidemenu-tab-title {
+    font-family: "Acumin Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000;
+    text-transform: uppercase;
+    margin-left: 18px;
+}
+
+.side-sub-menu-main .sidemenu-main-tab:hover .side-sub-menu-tab-title,
+.sidemenu-main .sidemenu-main-tab:hover .sidemenu-tab-title {
+    color: #fff;
+    stroke: #fff;
+}
+
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.bloobloom-header .bloobloom-side-menu .sidemenu-main .sidemenu-main-tab .sidemenu-tab-icon {
+    margin-right: 18px;
+}
+
+.sidemenu-main .sidemenu-main-tab:hover .sidemenu-tab-icon path {
+    stroke: #fff;
+}
